@@ -5,12 +5,28 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #F97316;
+  --custom-black: #2E2E2E;
+  --custom-light-black: #434343;
+  --custom-gray: #EFF0F5;
+  --custom-light-gray: #F0F1F1;
+  --custom-light-gray-2: #F5F5F5;
+  --custom-dark-gray: #707070;
+
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #F97316;
+    --custom-black: #2E2E2E;
+    --custom-light-black: #434343;
+    --custom-gray: #EFF0F5;
+    --custom-light-gray: #F0F1F1;
+    --custom-light-gray-2: #F5F5F5;
+    --custom-dark-gray: #707070;
   }
 }
 
@@ -18,4 +34,24 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.fade-enter{
+  opacity: 0;
+}
+.fade-exit{
+  opacity: 1;
+}
+.fade-enter-active{
+  opacity: 1;
+}
+.fade-exit-active{
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active{
+  transition: opacity 500ms;
 }
