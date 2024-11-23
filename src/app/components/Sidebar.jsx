@@ -67,7 +67,7 @@ export default function Sidebar({ openSidebar, setOpenSidebar }) {
       }`}
     >
       <div
-        className={`absolute h-full bg-primary min-w-72 top-0 left-0 max-h-screen overflow-y-scroll duration-300 ${
+        className={`absolute h-full bg-primary min-w-72 top-0 left-0 max-h-screen overflow-y-scroll duration-300 scrollbar-hide ${
           openSidebar ? "translate-x-0" : "-translate-x-full"
         }`}
       >

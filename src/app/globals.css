@@ -55,3 +55,17 @@ body {
 .fade-exit-active{
   transition: opacity 500ms;
 }
+
+
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* for Internet Explorer and Edge */
+  scrollbar-width: none;  /* for Firefox */
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
