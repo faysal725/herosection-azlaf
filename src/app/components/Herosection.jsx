@@ -2,7 +2,7 @@
 
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Category from "./Category";
 
 export default function Herosection() {
@@ -12,10 +12,15 @@ export default function Herosection() {
   const helloRef = useRef(null);
   const goodbyeRef = useRef(null);
   const nodeRef = state ? helloRef : goodbyeRef;
+
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     setState((state) => !state)
+  //   }, 3000);
+  // }, [])
+  
   return (
     <section>
-      {/* <button onClick={() => setState((state) => !state)}>dfdf
-        </button> */}
       <div className="relative">
         <SwitchTransition mode={mode}>
           <CSSTransition
