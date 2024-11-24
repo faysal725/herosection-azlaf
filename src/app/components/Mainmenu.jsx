@@ -13,14 +13,14 @@ export default function Mainmenu() {
 
   const [openSidebar, setOpenSidebar] = useState(false)
   return (
-    <main className="max-w-7xl mx-auto py-5  px-1 xl:px-0 relative">
+    <main className="max-w-7xl mx-auto py-5  px-1 xl:px-0 relative ">
       <ul className="grid grid-cols-12 gap-5 z-0">
         <li className="col-span-12 xl:col-span-2 flex justify-center xl:justify-start items-center">
           <Bars3Icon onClick={() => setOpenSidebar(true)} className="h-7 w-7 text-customBlack xl:hidden" />
           <img src="/images/logo.png" alt="Logo" className="object-contain mx-auto xl:mx-0" />
         </li>
         <li className="col-span-12 xl:col-span-7 flex items-center justify-center">
-          <div className=" flex justify-between items-center bg-customGray h-full w-full gap-5 pl-2">
+          <div className=" flex justify-between items-center bg-customGray rounded-lg h-full w-full gap-5 pl-2">
             <input
               type="text"
               className="w-full bg-transparent outline-none"
